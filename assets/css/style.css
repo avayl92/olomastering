@@ -433,8 +433,8 @@ main {
     transition: all 0.1s ease-in-out;
     white-space: nowrap; }
     .principal .nav .nav-link.active {
-      color: #79ff61;
-      border-bottom: 1px solid #79ff61; }
+      color: #222226;
+      border-bottom: 1px solid #222226; }
 
 .principal .cont {
   display: none;
@@ -486,9 +486,9 @@ footer {
       font-size: 14px;
       line-height: 13px; }
       footer ul .nav-link:hover {
-        color: #222226; }
+        color: #79ff61; }
       footer ul .nav-link.active {
-        color: #222226; }
+        color: #79ff61; }
 
 .contact {
   margin-top: 64px;
