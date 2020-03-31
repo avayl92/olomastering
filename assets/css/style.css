@@ -433,8 +433,8 @@ main {
     transition: all 0.1s ease-in-out;
     white-space: nowrap; }
     .principal .nav .nav-link.active {
-      color: #222226;
-      border-bottom: 1px solid #222226; }
+      color: #79ff61;
+      border-bottom: 1px solid #79ff61; }
 
 .principal .cont {
   display: none;
