@@ -580,7 +580,7 @@ footer {
       cursor: pointer;
       text-decoration: underline; }
       .principal p span:hover {
-        color: #79ff61; }
+        color: #1fc700; }
     .principal .cont {
       left: calc(700px + 64px); }
       .principal .cont.active {
