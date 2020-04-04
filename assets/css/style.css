@@ -456,7 +456,7 @@ main {
   .touch a {
     color: rgba(34, 34, 38, 0.5); }
     .touch a:hover {
-      color: #1fc700;
+      color: #00E1B9;
       text-decoration: none; }
   .touch p {
     margin-bottom: 8px; }
@@ -486,9 +486,9 @@ footer {
       font-size: 14px;
       line-height: 13px; }
       footer ul .nav-link:hover {
-        color: #1fc700; }
+        color: #00E1B9; }
       footer ul .nav-link.active {
-        color: #1fc700; }
+        color: #00E1B9; }
 
 .contact {
   margin-top: 64px;
@@ -514,7 +514,7 @@ footer {
     color: rgba(34, 34, 38, 0.5);
     text-decoration: underline; }
     .contact a:hover {
-      color: #1fc700;
+      color: #00E1B9;
       text-decoration: none; }
 
 @media only screen and (min-width: 480px) {
@@ -580,7 +580,7 @@ footer {
       cursor: pointer;
       text-decoration: underline; }
       .principal p span:hover {
-        color: #1fc700; }
+        color: #00E1B9; }
     .principal .cont {
       left: calc(700px + 64px); }
       .principal .cont.active {
