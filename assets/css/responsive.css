@@ -1,0 +1,130 @@
+@media (max-width: 991px) {
+	.navigation-wrapper {
+		margin: 0px 24px 0px 8px;
+	}
+
+	.header-logo {
+		width: 100%;
+		max-width: 159.72px;
+	}
+	.header-logo > a > img {
+		width: 100%;
+		max-width: 159.72px;
+	}
+	img {
+		width: 100%;
+	}
+	.container {
+		max-width: 720px;
+		margin-bottom: 64px;
+	}
+	.content-wrapper {
+		padding: 0px 24px;
+	}
+}
+@media (max-width: 767px) {
+	.home-sec {
+		padding-bottom: 0;
+	}
+	.wrapper {
+		padding-bottom: 0;
+	}
+	.studio-sec {
+		padding-bottom: 34px;
+	}
+	img {
+		width: 100%;
+	}
+
+	.primary-menu {
+		display: none;
+		position: relative;
+	}
+	.menu-bar {
+		display: flex;
+		opacity: 1;
+		visibility: visible;
+	}
+	.container {
+		margin: 0;
+	}
+	.home-content {
+		flex-direction: column-reverse;
+	}
+
+	.marquee {
+		position: relative;
+		width: 100vw;
+		max-width: 100%;
+		height: 30px;
+		overflow-x: hidden;
+	}
+
+	.track {
+		position: absolute;
+		white-space: nowrap;
+		will-change: transform;
+		animation: marquee 12s linear infinite;
+		-webkit-animation: marquee 12s linear infinite;
+	}
+
+	@keyframes marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-95%);
+			-webkit-transform: translateX(-95%);
+			-moz-transform: translateX(-95%);
+			-ms-transform: translateX(-95%);
+			-o-transform: translateX(-95%);
+		}
+	}
+
+	.studio-content .content-body {
+		padding: 0px 24px;
+	}
+	.item-box-content > .item-left {
+		max-width: 100%;
+	}
+	.item-box-content > .item-right {
+		max-width: 100%;
+	}
+	.footer-section {
+		position: relative;
+		padding: 10px 24px;
+		z-index: 9;
+		/* margin-top: 275px; */
+	}
+	.footer-wrapper {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.left-nav-list,
+	.right-nav-list {
+		flex-basis: 100%;
+	}
+
+	.client-sec {
+		padding-bottom: 0px;
+	}
+	.home-content .banner-image > img {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 575px) {
+}
+
+@media (max-width: 375px) {
+	.footer-section .navItem {
+		margin-right: 20px;
+	}
+	.footer-section .navItem:last-child {
+		margin-right: 0px;
+	}
+	.left-nav-list,
+	.right-nav-list {
+		flex-wrap: wrap;
+	}
+}

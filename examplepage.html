@@ -13,7 +13,7 @@
 
     <title>olo mastering music web template</title>
   </head>
-  <body class="home-page">
+  <body>
     <!-- Header section markup strat -->
     <header class="header-part">
       <nav class="navigation-wrapper">
@@ -22,7 +22,6 @@
             ><img src="./assets/images/logo.png" alt="logo-image"
           /></a>
         </div>
-
         <div class="navbar-content">
           <div class="primary-menu">
             <ul class="menu">
@@ -36,7 +35,9 @@
                 <a href="./clientpage.html" class="nav-link">clients</a>
               </li>
               <li class="nav-item">
-                <a href="./examplepage.html" class="nav-link">examples</a>
+                <a href="./examplepage.html" class="nav-link active"
+                  >examples</a
+                >
               </li>
               <li class="nav-item">
                 <a href="./servicepage.html" class="nav-link"
@@ -60,31 +61,84 @@
 
     <!-- Main contents body markup start  -->
     <main class="wrapper">
-      <!-- home page content section markup here start -->
-      <section class="section-fluid home-sec d-flex">
-        <div class="marquee marque-active hide-lg">
-          Welcome to Olo mastering, a mastering & mixing studio run by Isabel
-          Schröer.
-        </div>
-        <figure class="ban-img">
-          <img src="assets/images/home-image.png" alt="studio-image" />
-        </figure>
-        <div class="hide-sm">
-          Welcome to olo mastering, a mastering & mixing studio run by Isabel
-          Schröer.
-        </div>
-        <!-- <div class="container">
-          <article class="home-content content-wrapper">
-            <figure class="banner-image" id="homeImag">
-              <label>
-                <input type="checkbox" />
-                <img src="./assets/images/home-image.png" alt="studio-image" />
-              </label>
-            </figure>
+      <!-- studio section markup here start -->
+      <section class="section-fluid example-sec d-flex">
+        <div class="container">
+          <article class="example-content content-wrapper">
+            <div class="content-body">
+              <p>
+                To get an impression of my work, download a selection of clips
+                with pre & post masters that I have compiled. For other
+                references feel free to check my Discogs & Instagram.
+              </p>
+              <h4 class="heading">Sound examples</h4>
+
+              <div class="audio-box">
+                <figure class="audio-image">
+                  <img
+                    src="./assets/images/track-img/01_Kombé - Harbin.jpg"
+                    alt="radhe-shyam-mp3-song"
+                    id="thumbnail"
+                  />
+                </figure>
+                <div class="audio-control-contents">
+                  <div class="track-info">
+                    <p id="track-title" class="title-song">Kombé - Harbin</p>
+                    <!-- <span>-</span> -->
+
+                    <!-- <p id="track-artist" class="artist">Isabel</p> -->
+                  </div>
+
+                  <audio
+                    class="audio"
+                    src="./assets/audio-track/01_Kombé - Harbin.mp3"
+                    id="track"
+                  ></audio>
+
+                  <div class="progress-bar">
+                    <input
+                      type="range"
+                      id="progressBar"
+                      min="0"
+                      max="100"
+                      step="0"
+                      value="0"
+                    />
+                    <span class="bar"></span>
+                  </div>
+                  <div class="audio-control">
+                    <div class="playPause">
+                      <span id="play" class="control play">play</span>
+                      <span id="pause" class="control pause">pause</span>
+                    </div>
+                    <div class="prevNext">
+                      <!-- <span id="prev-track" class="control prev-track">prev</span> -->
+                      <span id="next-track" class="control next-track"
+                        >next</span
+                      >
+                    </div>
+                    <a
+                      id="buynowBtn"
+                      href="https://strd.bandcamp.com/album/winter-restrictions-vol-1"
+                      target="_blank"
+                      class="control buy-now"
+                      >buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <a
+                href="./olomastering-examples.zip"
+                target="_blank"
+                class="download-link"
+              >
+                >> Download all in lossless <<
+              </a>
+            </div>
           </article>
-        </div>  -->
-        <div class="container-fluid nav-area">
-          <div class="overlay-slide home-menu">
+        </div>
+        <!-- <div class="container-fluid">
+          <div class="overlay-slide">
             <nav class="overlay-menu">
               <ul class="main-nav">
                 <li class="sub-menu">
@@ -161,7 +215,7 @@
                 </li>
                 <li class="sub-menu">
                   <a href="./examplepage.html">
-                    Examples
+                    * Examples *
                     <svg
                       width="8"
                       height="13"
@@ -214,10 +268,9 @@
               </ul>
             </nav>
           </div>
-        </div>
+        </div> -->
       </section>
-      <!-- home page content section markup here start -->
-
+      <!-- studio section markup here start -->
       <ul class="flyout-nav">
         <li>
           <a href="./studiopage.html">
@@ -231,18 +284,18 @@
           <a href="./clientpage.html"> Clients </a>
         </li>
         <li class="sub-menu">
-          <a href="./examplepage.html"> Examples </a>
+          <a href="./examplepage.html">* Examples *</a>
         </li>
         <li class="sub-menu">
           <a href="./servicepage.html"> Services & Fees </a>
         </li>
       </ul>
-
+  
     </main>
     <!-- Main contents body markup done  -->
 
     <!-- Footer section markup start -->
-    <footer class="footer-section">
+    <footer class="footer-section footer-fixed">
       <ul class="left-nav-list">
         <li class="navItem">
           <a href="mailto:hello@olomastering.com" class="nav-link email-link"
@@ -290,10 +343,9 @@
     </footer>
     <!-- Footer section markup done -->
 
-
+   
     <!-- All JS Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/jquery.marquee.min.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>
