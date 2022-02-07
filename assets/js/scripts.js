@@ -11,8 +11,6 @@ $(document).ready(function () {
   //     // $(".footer-section").css({ position: "sticky" });
   //   });
 
-
-
   $("#menu-bar").on("click", function () {
     $(this).toggleClass("active");
     $(".flyout-nav").toggleClass("nav-active");
@@ -21,15 +19,13 @@ $(document).ready(function () {
   });
 
   var marqueee = false;
-  
-  $(window).on("load resize", function () {
 
+  $(window).on("load resize", function () {
     if ($(".marquee").length > 0) {
-      
       // $('.marquee').addClass('marque-active')
 
-      if(marqueee != true){
-        console.log('lagse');
+      if (marqueee != true) {
+        console.log("lagse");
         $(".marquee").marquee({
           speed: 50,
           gap: 24,
@@ -39,7 +35,6 @@ $(document).ready(function () {
         });
       }
       marqueee = true;
-      
     }
     // console.log('RESE');
     // if ($(document).innerWidth() < 768) {
@@ -62,11 +57,9 @@ $(document).ready(function () {
     console.log($(document).innerWidth());
 
     if ($(document).innerWidth() > 991) {
-      
     }
   });
 });
-
 
 if ($(".ban-img").length > 0) {
   $(".ban-img").on("click", function (e) {
@@ -95,7 +88,7 @@ const tracks = [
   "./assets/audio-track/01_Kombé - Harbin.mp3",
   "./assets/audio-track/02_Red On - Night, All.mp3",
   "./assets/audio-track/03_Neu Verboten - Church Of Sins (Audrey Danza Remix).mp3",
-  "./assets/audio-track/04_Cubemod & Drush - Vision.mp3",
+  "./assets/audio-track/04_Cubemod _ Drush - Vision.mp3",
   "./assets/audio-track/05_LiAEN - Badminton.mp3",
   "./assets/audio-track/06_Jorge Savoretti - Trota Cielos.mp3",
   "./assets/audio-track/07_Fxyz - Endless Stare.mp3",
@@ -105,7 +98,7 @@ const tracks = [
 ];
 
 const thumbnails = [
-  "./assets/images/track-img/01_Kombé - Harbin.jpg",
+  "./assets/images/track-img/01_Kombe - Harbin.jpg",
   "./assets/images/track-img/02_Red On - Night, All.jpeg",
   "./assets/images/track-img/03_Neu Verboten - Church Of Sins (Audrey Danza Remix).jpeg",
   "./assets/images/track-img/04_Cubemod _ Drush - Vision.jpeg",
@@ -140,7 +133,7 @@ const singleTrack = [
   "https://fxyz.bandcamp.com",
   "https://paragraf201.bandcamp.com/album/l-ufst-du-mit-l-ufst-du-gefahr",
   "https://raiders.bandcamp.com",
-  "https://transatlanticrecords.bandcamp.com/album/hab-dich-lie",
+  "https://transatlanticrecords.bandcamp.com/album/hab-dich-lieb",
 ];
 
 if ($("audio").length > 0) {
@@ -177,8 +170,13 @@ if ($("audio").length > 0) {
     thumbnail.src = thumbnails[trackIndex];
 
     trackTitle.textContent = trackTitles[trackIndex];
-    playing = false;
-    pausePlay();
+    if (playing) {
+      track.pause();
+    } else {
+      track.play();
+    }
+    // playing = false;
+    // pausePlay();
     startwidth = 0;
     buynowBtn.setAttribute("href", singleTrack[trackIndex]);
 
