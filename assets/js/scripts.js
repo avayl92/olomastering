@@ -137,7 +137,7 @@ const singleTrack = [
 ];
 
 if ($("audio").length > 0) {
-  let playing = true;
+  var playing = true;
   var startwidth = 1;
   var maxDuration;
 
